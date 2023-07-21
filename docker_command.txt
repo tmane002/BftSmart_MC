@@ -1,0 +1,4 @@
+sudo docker run -v /home/tejas/work/bftsmartt:/root --name s1 -it ubuntu /bin/bash
+./runscripts/smartrun.sh bftsmart.demo.counter.CounterServer 0
+
+sudo docker rm $(sudo docker ps -a)
